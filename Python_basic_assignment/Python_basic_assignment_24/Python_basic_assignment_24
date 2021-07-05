@@ -1,0 +1,7 @@
+1. What is the relationship between def statements and lambda expressions ?
+2. What is the benefit of lambda?
+3. Compare and contrast map, filter, and reduce.
+4. What are function annotations, and how are they used?
+5. What are recursive functions, and how are they used?
+6. What are some general design guidelines for coding functions?
+7. Name three or more ways that functions can communicate results to a caller.

@@ -1,0 +1,44 @@
+1. Why are functions advantageous to have in your programs?
+Answer: Main advangtage is reusability of the code.
+
+2. When does the code in a function run: when it's specified or when it's called?
+Answer: only when it's called, the function will run.
+
+3. What statement creates a function?
+Answer: def <function_name>(<arguments>):
+            ...
+            return <statement>
+
+4. What is the difference between a function and a function call?
+Answer: Function is just a function that doesnt run if we are not calling it.
+        Function call is to call the function by providing that function dependecies, it will execute the function entirelly.
+
+5. How many global scopes are there in a Python program? How many local scopes?
+Answer: there is only one global scope. local scope depends upon the number of functions we have.
+
+6. What happens to variables in a local scope when the function call returns?
+Answer: local scope only works inside the function. after returning the function, local scope destroys.
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+Answer: return value returns something that we mention and the end of the function. it may either expression or a statement. it will execute and return it, at the time of calling the funciton.
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+Answer: It returns none.
+
+9. How do you make a function variable refer to the global variable?
+Answer: by using global keyword.
+
+10. What is the data type of None?
+Answer: Nonetype
+
+11. What does the sentence import areallyourpetsnamederic do?
+Answer: No module found because, we doesnt create any module named areallyourpetsnamederic.
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+Answer: i have to call the spam.becon() function.
+
+13. What can you do to save a programme from crashing if it encounters an error?
+Answer: using try and except block
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+Answer: if any error happens in try clause, program doesn't crash it goes to the except clause that executes the error.

@@ -1,0 +1,5 @@
+1) . What is the difference between enclosing a list comprehension in square brackets and parentheses?
+2) What is the relationship between generators and iterators?
+3) What are the signs that a function is a generator function?
+4) What is the purpose of a yield statement?
+5) What is the relationship between map calls and list comprehensions? Make a comparison and contrast between the two.

@@ -1,0 +1,45 @@
+1. What is the result of the code, and why?
+>>> def func(a, b=6, c=8):
+print(a, b, c)
+>>> func(1, 2)
+Answer: (1,2,8)
+    func takes two actual argument and third one c as a default argument.
+
+
+2. What is the result of this code, and why?
+>>> def func(a, b, c=5):
+print(a, b, c)
+>>> func(1, c=3, b=2)
+Answer: (1,2,3)
+    function takes keyworded argument for b and c and rest 1 is takes for a.
+
+
+3. How about this code: what is its result, and why?
+>>> def func(a, *pargs):
+print(a, pargs)
+>>> func(1, 2, 3)
+Answer: 1, (2,3)
+     a takes as a actual argument that we are passing 1, rest of them are takes as a variable length argument in the form of tuple.
+
+4. What does this code print, and why?
+>>> def func(a, **kargs):
+print(a, kargs)
+>>> func(a=1, c=3, b=2)
+Answer: 1, {"c" : 3, "b" : 2)
+    a takes as a actual argument that we are passing with keyword a, rest of them are considered as a keyworded variable length argument they pass in form of dictionary.
+
+5. What gets printed by this, and explain?
+>>> def func(a, b, c=8, d=5): print(a, b, c, d)
+>>> func(1, *(5, 6))
+Answer: (1,5,6,5)
+    1 for an actual argument and the variable length argument with two values(5,6) are passed in form of tuple. they taken for b and c(by replacing default value.), d has the default value 5.
+
+6. what is the result of this, and explain?
+>>> def func(a, b, c): a = 2; b[0] = 'x'; c['a'] = 'y'
+>>> l=1; m=[1]; n={'a':0}
+>>> func(l, m, n)
+>>> l, m, n
+Answer: 1 ['x'] {'a': 'y'}
+    because inside the function, only we can able to change the local variable, so global integer class variable l remains same outside the funciton.
+    list is mutable, it passes along with their id inside the function. so we can able to change the list index values.
+    dictionary also same like list. 

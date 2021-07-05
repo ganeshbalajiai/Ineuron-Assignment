@@ -1,0 +1,93 @@
+1. What is the result of the code, and explain?
+>>> X = 'iNeuron'
+>>> def func():
+        print(X)
+>>> func()
+Answer: It prints the value of x "iNeuron". 
+    steps:
+        "iNeuron" value is stored in X.
+        function with name func is defined and it prints the value of global variable X.
+        at the time calling the func(), it prints the value of X.
+
+2. What is the result of the code, and explain?
+>>> X = 'iNeuron'
+>>> def func():
+X = 'NI!'
+>>> func()
+>>> print(X)
+Answer: It prints the value of "iNeuron".
+    steps:
+        "iNeuron" value is stored in X.
+        function with name func is defined and it creates the local variable X with "NI!". But it only accessable inside the function because now it becomes the local variable.
+        at the time calling the func(), it performs it operation.
+        and the prints the value of x which is in the global variable.
+
+
+3. What does this code print, and why?
+>>> X = 'iNeuron'
+>>> def func():
+X = 'NI'
+print(X)
+>>> func()
+>>> print(X)
+Answer: It prints the value of "NI" first and then "INeuron" next.
+    steps:
+        "iNeuron" value is stored in X.
+        function with name func is defined and it creates the local variable X with "NI!". But it only accessable inside the function because now it becomes the local variable.
+        and the print function prints the value of x which is in the local variable "NI" at the time of calling the function.
+        at the time calling the func(), it performs it operation.
+        and then print function prints the value of x which is in the global variable "INeuron".
+
+4. What output does this code produce? Why?
+>>> X = 'iNeuron'
+>>> def func():
+global X
+X = 'NI'
+>>> func()
+>>> print(X)
+Answer: It prints the value of x "NI"
+    steps:
+        "iNeuron" value is stored in X.
+        function with name func is defined.
+        inside the function we call the global variable x with their own id.
+        after replace the value of x with "NI". Now it allocates different memory id for x. "INeuron" went to garbage memory.
+        at the time calling the func(), it performs it operation.
+        and then print function prints the value of x which is "NI".
+
+5. What about this code—what’s the output, and why?
+>>> X = 'iNeuron'
+>>> def func():
+X = 'NI'
+def nested():
+print(X)
+nested()
+>>> func()
+>>> X
+Answer: It prints the value of X "NI" and then it print "INeuron".
+    steps:
+        "iNeuron" value is stored in X.
+        function with name func is defined.
+        inside the function it creates the local variable X with "NI". But it only accessable inside the function because now it becomes the local variable.
+        After that it calls the function nested(), it prints the local variable of the func() "X" which is the global variable for this nested() funcion.
+        All above occurs at the time of calling func()
+        and then print function prints the value of global variable X which is "INeuron".
+
+6. How about this code: what is its output in Python 3, and explain?
+>>> def func():
+X = 'NI'
+def nested():
+nonlocal X
+X = 'Spam'
+nested()
+print(X)
+>>> func()
+
+Answer: It prints the value of X "Span".
+    steps:
+        function with name func is defined.
+        inside the function it creates the local variable X with "NI". But it only accessable inside the function because it is local variable.
+        After that it calls the function nested()
+        inside the function we call the nonlocal variable x with their own id.
+        after replace the value of x with "Spam". Now it allocates different memory id for x. "NI" went to garbage memory.
+        After that it prints value of X "Spam" which was created inside the nested function by replacing the nonlocal variable x.
+        All above occurs at the time of calling func()

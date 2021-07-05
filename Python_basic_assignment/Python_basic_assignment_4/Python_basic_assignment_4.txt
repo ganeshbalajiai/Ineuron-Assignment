@@ -1,0 +1,55 @@
+1. What exactly is []?
+Answer: It refers to the list datatype.
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+Answer: spam[2] = "hello". index 2 is the third value.
+
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+Answer: spam[3] which means 8
+
+4. What is the value of spam[-1]?
+Answer: Last value of the spam which means 10
+
+5. What is the value of spam[:2]?
+Answer: first two indexes are returned which means [2,4]
+
+Let's pretend bacon has the list [3.14, 'cat,' 11, 'cat,' True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+Answer: 1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+Answer: [3.14,"cat", 11, "cat", True, 99]
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+Answer: [3.14, 11, "cat", True, 99]
+
+9. What are the list concatenation and list replication operators?
+Answer: list concatenation has the operator +, list replication has the operator *
+
+10. What is difference between the list methods append() and insert()?
+Answer: append() adds the value in the last position.
+        insert() adds the value in the position that what we give.
+
+11. What are the two methods for removing items from a list?
+Answer: del and remove()
+
+12. Describe how list values and string values are identical.
+Answer: both are used to many operations like for loop, in and not in operators, concatenation and replication will be done.
+
+13. What's the difference between tuples and lists?
+Answer: List- It is the collection of values which having mutability,allows duplicate values and also have indexing capability.
+        Tuple- It is also the collection of values which having immutability, allowes duplicate values and indexing capability.
+
+14. How do you type a tuple value that only contains the integer 42?
+Answer: (42, )
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+Answer: tuple(), list()
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+Answer: They contains refers to list values. 
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+Answer: copy.copy() refers shallow copy
+        copy.deepcopy() refers deep copy
